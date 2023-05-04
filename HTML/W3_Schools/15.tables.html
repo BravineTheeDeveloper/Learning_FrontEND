@@ -13,8 +13,12 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
-        th{
+        th, td{
             text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #c1dede;
         }
     </style>
 </head>
@@ -106,8 +110,39 @@
     <p>
         We use CSS to make tables look better and more attractive.
         <br><br>
-        <b><u>HTML Zebra Stripes.</u></b>
-        
+        <b><u>1. HTML Zebra Stripes.</u></b>
+        <br>If you add a background color on every other table row, you will get a nice zebra stripes effect.
+        <br>To style every other table row element, use the <b>:nth-child(even)</b> selector like this:
+        <br><br> <img src="Images/ZebraStripes.jpg">
+        <br><b>NOTE:</b>  If you use (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.
+        <br>
     </p>
+    <table style="width: 100%;">
+        <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+        </tr>
+        <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+        </tr>
+        <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+        </tr>
+        <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+        </tr>
+        <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+        </tr>
+      </table>
 </body>
 </html>
