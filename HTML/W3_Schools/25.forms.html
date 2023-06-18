@@ -34,7 +34,8 @@
     /* Style the list inside the menu.*/
     nav ul
     {
-
+        list-style-type: none;
+        padding: 0;
     }
 </style>
 </head>
@@ -52,71 +53,71 @@
     <section>
         <nav>
             <ul>
-                <li><a href="#">Text Fields. </a></li>
-                <li><a href="#">Radio buttons. </a></li>
-                <li><a href="#">Checkboxes. </a></li>
+                <li><a href="#C1">Text Fields. </a></li>
+                <li><a href="#C2">Radio buttons. </a></li>
+                <li><a href="#C3">Checkboxes. </a></li>
             </ul>
         </nav>
-    </section>
 
 
-    <h3><u><i>Text Fields</i></u></h3>
 
-    <form>
-        <label for="fname">First Name: </label><br>
-        <input type="text" id="fname" name="fname" placeholder="Enter First Name here"><br>
-        <label for="lname">Last Name: </label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="eid">Email Address </label><br>
-        <input type="email" id="eid" name="eid" placeholder="Enter your email address"><br>
-        <label for="Pword">Password:</label><br>
-        <input type="<PASSWORD>" placeholder="Enter password here..."><br>
-    </form><br>
-    <hr>
+        <h3 id="C1"><u><i>Text Fields</i></u></h3>
 
-    <h3><i><u>Radio Buttons.</u></i></h3>
-    <p>
-        These are ones that enable a user to select from choices given on the webpage in accordance to their preference.
-        <br>A good example could be;
-    </p>
-    <p>Choose your favorite Web Language: </p>
-    <form>
-        <input type="radio" id="php" name="fav_lang" value="PHP">
-        <label for="php">PHP</label><br>
-        <input type="radio" id="html" name="fav_lang" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="javascript" name="fav_lang" value="JavaScript">
-        <label for="javascript">JavaScript</label><br>
-        <input type="radio" id="css" name="fav_lang" value="CSS">
-        <label for="css">CSS</label><br><br>
-        <input type="submit" value="Submit">
-    </form>
-    <p>Another demonstration could be one for favorite Programming language: </p>
-    <form>
-          <input type="radio" id="python" name="fav_language" value="Python">
-          <label for="html">Python</label><br>
-          <input type="radio" id="java" name="fav_language" value="Java">
-          <label for="css">Java</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">JavaScript</label><br><br>
-        <input type="submit" value="Submit">
-    </form><br>
+        <form>
+            <label for="fname">First Name: </label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name here"><br>
+            <label for="lname">Last Name: </label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="eid">Email Address </label><br>
+            <input type="email" id="eid" name="eid" placeholder="Enter your email address"><br>
+            <label for="Pword">Password:</label><br>
+            <input type="<PASSWORD>" placeholder="Enter password here..."><br>
+        </form><br>
         <hr>
 
-    <h3><i><u>Check Boxes</u></i></h3>
-    <p>
-        These ones enable a user select oen or more of the give choices after a particular query.
-        <br>For example;<br><b>What transport vessel do yo have?</b>
-    </p>
-    <form>
-        <input type="checkbox" id="vessel1" name="vessel1" value="Car">
-        <label for="car">I have a Car!</label><br>
-        <input type="checkbox" id="vessel2" name="vessel2" value="Bicycle">
-        <label for="bike"> I have a Bicycle!</label><br>
-        <input type="checkbox" id="vessel3" name="vessel3" value="Boat">
-        <label for="boat">I Have A Boat!</label><br><br>
-        <input type="submit" value="Submit">
-    </form>
+        <h3 id="C2"><i><u>Radio Buttons.</u></i></h3>
+        <p>
+            These are ones that enable a user to select from choices given on the webpage in accordance to their preference.
+        <br>A good example could be;
+        </p>
+        <p>Choose your favorite Web Language: </p>
+        <form>
+            <input type="radio" id="php" name="fav_lang" value="PHP">
+            <label for="php">PHP</label><br>
+            <input type="radio" id="html" name="fav_lang" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="javascript" name="fav_lang" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="radio" id="css" name="fav_lang" value="CSS">
+            <label for="css">CSS</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Another demonstration could be one for favorite Programming language: </p>
+        <form>
+              <input type="radio" id="python" name="fav_language" value="Python">
+              <label for="html">Python</label><br>
+              <input type="radio" id="java" name="fav_language" value="Java">
+              <label for="css">Java</label><br>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">JavaScript</label><br><br>
+            <input type="submit" value="Submit">
+        </form><br>
+        <hr>
 
+        <h3 id="C3"><i><u>Check Boxes</u></i></h3>
+        <p>
+            These ones enable a user select oen or more of the give choices after a particular query.
+            <br>For example;<br><b>What transport vessel do yo have?</b>
+        </p>
+        <form>
+            <input type="checkbox" id="vessel1" name="vessel1" value="Car">
+            <label for="car">I have a Car!</label><br>
+            <input type="checkbox" id="vessel2" name="vessel2" value="Bicycle">
+            <label for="bike"> I have a Bicycle!</label><br>
+            <input type="checkbox" id="vessel3" name="vessel3" value="Boat">
+            <label for="boat">I Have A Boat!</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </body>
 </html>
