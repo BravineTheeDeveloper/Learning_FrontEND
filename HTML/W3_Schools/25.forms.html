@@ -25,7 +25,8 @@
         color:#fff;
     }
     /*Create two column boxes that float against each other. */
-    nav{
+    nav
+    {
         float: left;
         width: 25%;
         padding: 20px;
@@ -37,6 +38,21 @@
         list-style-type: none;
         padding: 0;
     }
+    article
+    {
+        float: left;
+        padding: 30px;
+        width: 75%;
+        background-color: #f1f1f1;
+    }
+    /*Create floats after the column*/
+    section::after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*Styles the footer*/
 </style>
 </head>
 <body>
@@ -58,7 +74,7 @@
                     <li><a href="#C3">Checkboxes. </a></li>
                 </ul>
             </nav>
-        
+
         <article>
             <h3 id="C1"><u><i>Text Fields</i></u></h3>
 
@@ -119,5 +135,9 @@
             </form>
         </article>
     </section>
+
+    <footer>
+        Footer
+    </footer>
 </body>
 </html>
