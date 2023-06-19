@@ -152,6 +152,8 @@
             <p>
                 The <b>Select</b> element also has abilities to create drop down list.
                 <br>It is used together with the <b>Option</b> element which defines an option that can be selected.
+                <br>The <b>Size</b> element is used to specify the number of visible values.
+                <br>The <b>Multiple</b> element is used to allow the user to select more than one option when they hold the <b>Ctrl</b> key on the keyboard.
                 <br>Here are some Illustrations:
             </p>
             <form>
@@ -160,12 +162,36 @@
                     <option value="Java">Java</option>
                     <option value="Python">Python</option>
                     <option value="JavaScript">JavaScript</option>
-                    <option value="PHP">PHP</option>
+                    <option value="PHP">PHP</option><br>
+                    <input type="submit" value="Submit">
                 </select>
             </form><br>
 
             <form>
-                <label for="Cars"><b>What Car model do you like?</b></label>
+                <label for="Cars"><b>What Car model do you like?</b></label><br>
+                <select id="cars" name="cars" size="4" multiple>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes Benz">Mercedes Benz</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Mazda">Mazda</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="Chrysler">Chrysler</option>
+                    <option value="Ram">Ram</option><br><br>
+                    <input type="submit" value="Submit">
+                </select>
             </form>
         </article>
     </section>
