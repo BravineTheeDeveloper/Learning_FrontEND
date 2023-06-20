@@ -86,6 +86,7 @@
                     <li><a href="#C4">Drop down-list. </a></li>
                     <li><a href="#C5">Text Area </a></li>
                     <li><a href="#C6">Data Form</a></li>
+                    <li><a href="#C7">Data Lists</a></li>
                 </ul>
             </nav>
 
@@ -221,6 +222,28 @@
                     <input type="text" id="lname" name="lname"><br>
                     <input type="submit" value="Submit">
                 </fieldset>
+            </form><br>
+            <hr>
+
+            <h3 id="C7"><u><i>Data List</i></u></h3>
+            <p>The <b>datalist</b> element provides a lists of predefined options for an <b>input</b> element.
+                When the list contains more than one option, it will display as drop-down menu.<br>
+                To use this feature you need to add attribute "list" with datalists ID inside input tag.
+                You also have to define all possible values that could appear on dropdown using <b> &lt;</b>
+                and <b>&gt;</b>. Each item should end up with semicolon (;) character. <br>
+                Example:<br>
+            </p>
+
+            <form>
+                <input list="Browsers">
+                <datalist id="Browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                    <option value="Brave"></option>
+                </datalist>
             </form>
         </article>
     </section>
